@@ -1,0 +1,379 @@
+[gd_scene load_steps=3 format=3 uid="uid://j5mrxn2k0f7q"]
+
+[ext_resource type="ArrayMesh" uid="uid://bg8yhhd2s8y26" path="res://Objecten/cubusobj.obj" id="1_wgyna"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wgyna"]
+
+[node name="Grond blokken" type="StaticBody3D"]
+
+[node name="Cubusobj" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj" type="MeshInstance3D" parent="Cubusobj"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj2" type="MeshInstance3D" parent="Cubusobj"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj3" type="MeshInstance3D" parent="Cubusobj"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj5" type="MeshInstance3D" parent="Cubusobj"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("")
+
+[node name="Cubusobj6" type="MeshInstance3D" parent="Cubusobj"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj5")
+
+[node name="Cubusobj7" type="MeshInstance3D" parent="Cubusobj"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj3")
+
+[node name="Cubusobj8" type="MeshInstance3D" parent="Cubusobj"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj3")
+
+[node name="Cubusobj9" type="MeshInstance3D" parent="Cubusobj"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj5")
+
+[node name="Cubusobj4" type="MeshInstance3D" parent="Cubusobj"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 0)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj" type="MeshInstance3D" parent="Cubusobj/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj2" type="MeshInstance3D" parent="Cubusobj/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj3" type="MeshInstance3D" parent="Cubusobj/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj5" type="MeshInstance3D" parent="Cubusobj/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("")
+
+[node name="Cubusobj6" type="MeshInstance3D" parent="Cubusobj/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj5")
+
+[node name="Cubusobj7" type="MeshInstance3D" parent="Cubusobj/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj3")
+
+[node name="Cubusobj8" type="MeshInstance3D" parent="Cubusobj/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj3")
+
+[node name="Cubusobj9" type="MeshInstance3D" parent="Cubusobj/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj5")
+
+[node name="Cubusobj4" type="MeshInstance3D" parent="Cubusobj/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj2" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj3" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj5" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("")
+
+[node name="Cubusobj6" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj5")
+
+[node name="Cubusobj7" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj3")
+
+[node name="Cubusobj8" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj3")
+
+[node name="Cubusobj9" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj5")
+
+[node name="Cubusobj4" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj2" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj3" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj5" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("")
+
+[node name="Cubusobj6" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj5")
+
+[node name="Cubusobj7" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj3")
+
+[node name="Cubusobj8" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj3")
+
+[node name="Cubusobj9" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj5")
+
+[node name="Cubusobj4" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj2" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj3" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj5" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("")
+
+[node name="Cubusobj6" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj5")
+
+[node name="Cubusobj7" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj3")
+
+[node name="Cubusobj8" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj3")
+
+[node name="Cubusobj9" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj5")
+
+[node name="Cubusobj4" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj2" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj3" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj5" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("")
+
+[node name="Cubusobj6" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj5")
+
+[node name="Cubusobj7" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj3")
+
+[node name="Cubusobj8" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj3")
+
+[node name="Cubusobj9" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj5")
+
+[node name="Cubusobj4" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj2" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj3" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj5" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("")
+
+[node name="Cubusobj6" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj5")
+
+[node name="Cubusobj7" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj3")
+
+[node name="Cubusobj8" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj3")
+
+[node name="Cubusobj9" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj5")
+
+[node name="Cubusobj4" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 0)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj2" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj3" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj5" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("")
+
+[node name="Cubusobj6" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj5")
+
+[node name="Cubusobj7" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj3")
+
+[node name="Cubusobj8" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj3")
+
+[node name="Cubusobj9" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj5")
+
+[node name="Cubusobj4" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 0)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj2" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj3" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+mesh = ExtResource("1_wgyna")
+
+[node name="Cubusobj5" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("")
+
+[node name="Cubusobj6" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj5")
+
+[node name="Cubusobj7" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj3")
+
+[node name="Cubusobj8" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj3")
+
+[node name="Cubusobj9" type="MeshInstance3D" parent="Cubusobj/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4/Cubusobj4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+mesh = ExtResource("1_wgyna")
+skeleton = NodePath("../Cubusobj5")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+shape = SubResource("BoxShape3D_wgyna")
