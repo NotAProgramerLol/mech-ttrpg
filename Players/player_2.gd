@@ -19,7 +19,7 @@ func _physics_process(_delta):
 		move_vector.x -= step_size
 	if Input.is_action_just_pressed("Achter"):
 		move_vector.z += step_size
-	if Input.is_action_just_pressed("voor"):
+	if Input.is_action_just_pressed("Voor"):
 		move_vector.z -= step_size
 	if Input.is_action_just_pressed("Op"):
 		move_vector.y += step_size

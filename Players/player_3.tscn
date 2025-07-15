@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://bnokkn2f4vv6w"]
+
+[ext_resource type="Script" uid="uid://ksa6w11vp8uu" path="res://Players/player_3.gd" id="1_jpui3"]
+[ext_resource type="Script" uid="uid://0l6wsj3vjdh4" path="res://Players/player_3_body_3d.gd" id="2_y4i4v"]
+[ext_resource type="PackedScene" uid="uid://coie6rhkcw438" path="res://Objecten/Mech place holder.glb" id="3_y4i4v"]
+
+[node name="Player_3" type="Node3D"]
+script = ExtResource("1_jpui3")
+
+[node name="Player_3_Body3D" type="CharacterBody3D" parent="."]
+script = ExtResource("2_y4i4v")
+
+[node name="Raycast_holder" type="Node3D" parent="."]
+
+[node name="RayCast3D_Voor" type="RayCast3D" parent="Raycast_holder"]
+target_position = Vector3(0, 0, -1.5)
+
+[node name="RayCast3D_Achter" type="RayCast3D" parent="Raycast_holder"]
+target_position = Vector3(0, 0, 1.5)
+
+[node name="RayCast3D_links" type="RayCast3D" parent="Raycast_holder"]
+target_position = Vector3(-1.5, 0, 0)
+
+[node name="RayCast3D_Rechts" type="RayCast3D" parent="Raycast_holder"]
+target_position = Vector3(1.5, 0, 0)
+
+[node name="RayCast3D_Op" type="RayCast3D" parent="Raycast_holder"]
+target_position = Vector3(0, 1.5, 0)
+
+[node name="RayCast3D_Neer" type="RayCast3D" parent="Raycast_holder"]
+target_position = Vector3(0, -1.5, 0)
+
+[node name="Mech place holder" parent="." instance=ExtResource("3_y4i4v")]
+transform = Transform3D(-12.465, 0, -1.08972e-06, 0, 12.465, 0, 1.08972e-06, 0, -12.465, -0.001, -0.998305, 0)
