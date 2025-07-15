@@ -1,35 +1,28 @@
-extends Node3D
-
-
+extends CharacterBody3D
 
 @export var step_size := 2.0
 @export var tween_duration := 0.2
 
-
-
 #Raycast
-@onready var RayCast3D_Rechts = $Raycast_holder/RayCast3D_Rechts
-@onready var RayCast3D_links = $Raycast_holder/RayCast3D_links
-@onready var RayCast3D_Achter = $Raycast_holder/RayCast3D_Achter
-@onready var RayCast3D_Voor = $Raycast_holder/RayCast3D_Voor
-@onready var RayCast3D_Op = $Raycast_holder/RayCast3D_Op
-@onready var RayCast3D_Neer = $Raycast_holder/RayCast3D_Neer
-
-
+@onready var RayCast3D_Rechts = $Raycast_main/RayCast3D_Rechts
+@onready var RayCast3D_links = $Raycast_main/RayCast3D_Links
+@onready var RayCast3D_Achter = $Raycast_main/RayCast3D_Achter
+@onready var RayCast3D_Voor = $Raycast_main/RayCast3D_Voor
+@onready var RayCast3D_Op = $Raycast_main/RayCast3D_Op
+@onready var RayCast3D_Neer = $Raycast_main/RayCast3D_Neer
 
 var tween_active := false
 
 func _physics_process(_delta):
 	if tween_active:
 		return
-
-
+	
 	var move_vector = Vector3.ZERO
-
-
+	
 	if Input.is_action_just_pressed("Rechts"):
 		if not RayCast3D_Rechts.is_colliding():
 			move_vector.x += step_size
+			
 	
 	if Input.is_action_just_pressed("Links"):
 		if not RayCast3D_links.is_colliding():
@@ -53,6 +46,7 @@ func _physics_process(_delta):
 
 
 
+
 #Tween beweging
 	if move_vector != Vector3.ZERO:
 		var target_pos = global_position + move_vector
@@ -62,6 +56,8 @@ func _physics_process(_delta):
 			.set_trans(Tween.TRANS_SINE)\
 			.set_ease(Tween.EASE_IN_OUT)
 		tween.finished.connect(_on_tween_finished)
+		
+
 
 func _on_tween_finished():
 	tween_active = false

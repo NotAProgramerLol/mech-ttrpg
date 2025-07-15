@@ -40,7 +40,7 @@ func _physics_process(_delta):
 			.set_trans(Tween.TRANS_SINE)\
 			.set_ease(Tween.EASE_IN_OUT)
 		tween.finished.connect(_on_tween_finished)
-
+		
 	if rotate_vector != Vector3.ZERO:
 		var target_rot = global_rotation + rotate_vector
 		var tween := get_tree().create_tween()

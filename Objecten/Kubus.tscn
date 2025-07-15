@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://5b8o2lhjhmtl"]
+
+[ext_resource type="PackedScene" uid="uid://h6ylfwjroina" path="res://Objecten/Cubus.glb" id="1_abtuh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2q6km"]
+
+[node name="MeshInstance3D" type="MeshInstance3D"]
+
+[node name="Cubus" parent="." instance=ExtResource("1_abtuh")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+shape = SubResource("BoxShape3D_2q6km")

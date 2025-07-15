@@ -1,7 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://decu1kaifp7qf"]
+[gd_scene load_steps=4 format=3 uid="uid://decu1kaifp7qf"]
 
 [ext_resource type="Script" uid="uid://2bdd0t64iluj" path="res://Players/player_2.gd" id="1_wkcja"]
-[ext_resource type="Script" uid="uid://bt0n8xk0dvost" path="res://Players/Raycast/ray_cast_3d_y_.gd" id="2_r7spj"]
 [ext_resource type="PackedScene" uid="uid://coie6rhkcw438" path="res://Objecten/Mech place holder.glb" id="2_x3w28"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_x3w28"]
@@ -12,24 +11,25 @@ script = ExtResource("1_wkcja")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_x3w28")
 
-[node name="RayCast3D_Z-" type="RayCast3D" parent="."]
+[node name="Mech place holder" parent="." instance=ExtResource("2_x3w28")]
+transform = Transform3D(12.465, 0, 0, 0, 12.465, 0, 0, 0, 12.465, 0.0239773, -1.01009, 0.0202278)
+
+[node name="Raycast_main" type="Node3D" parent="."]
+
+[node name="RayCast3D_Z-" type="RayCast3D" parent="Raycast_main"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
 target_position = Vector3(0, -1.5, 0)
 
-[node name="RayCast3D_X-" type="RayCast3D" parent="."]
+[node name="RayCast3D_X-" type="RayCast3D" parent="Raycast_main"]
 transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0, 0, 0)
 target_position = Vector3(0, -1.5, 0)
 
-[node name="RayCast3D_Z+" type="RayCast3D" parent="."]
+[node name="RayCast3D_Z+" type="RayCast3D" parent="Raycast_main"]
 transform = Transform3D(-1, -8.74228e-08, 3.82137e-15, 0, -4.37114e-08, -1, 8.74228e-08, -1, 4.37114e-08, 0, 0, 0)
 target_position = Vector3(0, -1.5, 0)
 
-[node name="RayCast3D_x+" type="RayCast3D" parent="."]
+[node name="RayCast3D_x+" type="RayCast3D" parent="Raycast_main"]
 transform = Transform3D(1.19249e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, 1.19249e-08, -5.21253e-16, 0, 0, 0)
 target_position = Vector3(0, -1.5, 0)
 
-[node name="RayCast3D_Y-" type="RayCast3D" parent="."]
-script = ExtResource("2_r7spj")
-
-[node name="Mech place holder" parent="." instance=ExtResource("2_x3w28")]
-transform = Transform3D(12.465, 0, 0, 0, 12.465, 0, 0, 0, 12.465, 0.0239773, -1.01009, 0.0202278)
+[node name="RayCast3D_Y-" type="RayCast3D" parent="Raycast_main"]
