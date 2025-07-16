@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://cnxdj8xkr231n"]
+[gd_scene load_steps=8 format=3 uid="uid://cnxdj8xkr231n"]
 
 [ext_resource type="PackedScene" uid="uid://btulwivqrqiy0" path="res://Players/speler_3v_2.tscn" id="1_ryj1a"]
 [ext_resource type="PackedScene" uid="uid://j5mrxn2k0f7q" path="res://Scene/grond.tscn" id="2_ryj1a"]
 [ext_resource type="PackedScene" uid="uid://5b8o2lhjhmtl" path="res://Objecten/Kubus.tscn" id="3_mgu4j"]
+[ext_resource type="Script" uid="uid://b5fmcfh2o15sb" path="res://Scene/level_scene.gd" id="4_w0eh2"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_k3bf8"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -17,7 +18,7 @@ sky = SubResource("Sky_hnjvy")
 tonemap_mode = 2
 glow_enabled = true
 
-[node name="Node3D" type="Node3D"]
+[node name="Main scene" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_lqot3")
@@ -30,19 +31,12 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 0.604877, 0.796319, 0, -0.796319, 0.604877, 0, 7.84793, 10.185)
 
 [node name="Speler_3v2" parent="." instance=ExtResource("1_ryj1a")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
 [node name="StaticBody3D2" parent="." instance=ExtResource("2_ryj1a")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 
-[node name="MeshInstance3D" parent="." instance=ExtResource("3_mgu4j")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 1, 0)
+[node name="StaticBody3D" parent="." instance=ExtResource("3_mgu4j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 1, 0)
 
-[node name="MeshInstance3D2" parent="." instance=ExtResource("3_mgu4j")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 1, 0)
-
-[node name="MeshInstance3D3" parent="." instance=ExtResource("3_mgu4j")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 6)
-
-[node name="MeshInstance3D4" parent="." instance=ExtResource("3_mgu4j")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -6)
+[node name="PlayerSelector" type="Node3D" parent="."]
+script = ExtResource("4_w0eh2")

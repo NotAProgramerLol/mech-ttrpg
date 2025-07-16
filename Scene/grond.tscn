@@ -3,6 +3,7 @@
 [ext_resource type="ArrayMesh" uid="uid://bg8yhhd2s8y26" path="res://Objecten/cubusobj.obj" id="1_wgyna"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wgyna"]
+size = Vector3(9, 1, 9)
 
 [node name="Grond blokken" type="StaticBody3D"]
 

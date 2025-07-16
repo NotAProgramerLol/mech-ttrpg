@@ -1,17 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://btulwivqrqiy0"]
+[gd_scene load_steps=5 format=3 uid="uid://btulwivqrqiy0"]
 
 [ext_resource type="Script" uid="uid://cdfairwq7i6c0" path="res://Players/speler_3v_2.gd" id="1_lq6q6"]
 [ext_resource type="PackedScene" uid="uid://coie6rhkcw438" path="res://Objecten/Mech place holder.glb" id="1_vpxns"]
 [ext_resource type="Script" uid="uid://du2fs3iomsy5h" path="res://Objecten/mech_place_holder.gd" id="3_rqli8"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_rqli8"]
+
 [node name="Speler_3v2" type="CharacterBody3D"]
 script = ExtResource("1_lq6q6")
 
 [node name="Mech place holder" parent="." instance=ExtResource("1_vpxns")]
-transform = Transform3D(12.465, 0, 0, 0, 12.465, 0, 0, 0, 12.465, 0.0239773, -1.01009, 0.0202278)
+transform = Transform3D(12.465, 0, 0, 0, 12.465, 0, 0, 0, 12.465, 0.0239773, -0.01009, 0.0202278)
 script = ExtResource("3_rqli8")
 
 [node name="Raycast_main" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
 [node name="RayCast3D_Voor" type="RayCast3D" parent="Raycast_main"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
@@ -33,3 +36,7 @@ target_position = Vector3(0, -1.5, 0)
 target_position = Vector3(0, 1, 0)
 
 [node name="RayCast3D_Neer" type="RayCast3D" parent="Raycast_main"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 1, 0)
+shape = SubResource("BoxShape3D_rqli8")

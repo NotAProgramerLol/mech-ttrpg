@@ -4,6 +4,7 @@ extends Node3D
 @export var step_size := 2.0
 @export var tween_duration := 0.2
 @export var rotation_speed := 45.0
+@onready var game_manager = get_parent()  # of get_node("/root/...") als nodig
 
 var tween_active := false
 
@@ -11,6 +12,8 @@ var tween_active := false
 
 
 func _physics_process(_delta):
+
+	
 	if tween_active:
 		return
 	

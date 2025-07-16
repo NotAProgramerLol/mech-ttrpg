@@ -2,12 +2,12 @@
 
 [ext_resource type="PackedScene" uid="uid://h6ylfwjroina" path="res://Objecten/Cubus.glb" id="1_abtuh"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_2q6km"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_b1aj7"]
 
-[node name="MeshInstance3D" type="MeshInstance3D"]
+[node name="Standaard kubus" type="StaticBody3D"]
 
 [node name="Cubus" parent="." instance=ExtResource("1_abtuh")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
-shape = SubResource("BoxShape3D_2q6km")
+shape = SubResource("BoxShape3D_b1aj7")

@@ -11,12 +11,12 @@ extends CharacterBody3D
 @onready var RayCast3D_Op = $Raycast_main/RayCast3D_Op
 @onready var RayCast3D_Neer = $Raycast_main/RayCast3D_Neer
 
-var tween_active := false
 
+
+
+var tween_active := false
 func _physics_process(_delta):
-	if tween_active:
-		return
-	
+
 	var move_vector = Vector3.ZERO
 	
 	if Input.is_action_just_pressed("Rechts"):
